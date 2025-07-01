@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P6-TM06B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 6B 6to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje</strong>
+                                    <ul>
+                                        <li>Que los estudiantes implementen y prueben su "Plan de Calibración de Seguimiento". Que logren ejecutar con éxito el bucle de control activo, haciendo que el robot XGO siga una pelota. El objetivo principal es depurar el sistema en un entorno dinámico, ajustando parámetros como la velocidad de giro y la zona de tolerancia para mejorar la fiabilidad y suavidad del seguimiento.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase</strong>
+                                    <ul>
+                                        <li>⚡Bienvenida y Conexión</li>
+                                        <li>⚡IMPLEMENTACIÓN DEL CÓDIGO (Ejecución)</li>
+                                        <li>⚡PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO</li>
+                                        <li>⚡GNIUS STORM Y REINICIO DEL CICLO</li>
+                                    </ul>
+                                    <strong>Entregable Clave</strong>
+                                    <ul>
+                                        <li>Robot XGO demostrando un seguimiento de objetos suave y fiable, calibrado por el equipo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso al entorno de programación Python en las computadoras.</li>
+                                        <li>Robots XGO V2 (1 por cada 4 estudiantes), cargados y listos para conectar.</li>
+                                        <li>Los "Planes de Calibración de Seguimiento" creados por cada equipo en la Sesión 6A.</li>
+                                        <li>Pelota pequeña y de color visible.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>Chat de Agente Gnius (Xolo) activo para consultas de debugging.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna)</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y que el entorno Python funcione.</li>
+                                                <li>Asegurar que los robots XGO V2 estén completamente cargados.</li>
+                                                <li>Tener la presentación de diapositivas y la pelota listas.</li>
+                                                <li>Probar el chat Agente Gnius (Xolo) para consultas.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad práctica.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Bienvenida y Conexión ⏰ 2 minutos</h2>
+                <p><strong>Propósito:</strong> Recordar el trabajo previo, establecer el objetivo del día y preparar el entorno de trabajo para la sesión práctica.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Conexión con Sesión A ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida, recuérdales el trabajo de diseño de la Sesión A y crea expectación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, cazadores de IA! ¡Bienvenidos a la Sesión B! En la sesión pasada diseñaron un "Plan de Calibración de Seguimiento" para darle a su robot un instinto de cazador. Hoy es el día de la cacería. Vamos a ver si su robot puede seguir a su presa. ¿Están listos para la persecución?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Guía de Conexión y Preparación ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 3) Guía a los equipos para que se preparen técnicamente para la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Equipos, es hora de la cacería. Conecten sus robots, tomen una pelota (su 'presa') y abran su 'Plan de Calibración de Seguimiento'. ¡Vamos a ver si el instinto de su robot funciona!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: IMPLEMENTACIÓN DEL CÓDIGO (Ejecución) ⏰ 13 minutos</h2>
+                <p><strong>Propósito</strong> Poner en práctica el plan, verificando primero la percepción visual y luego el seguimiento estático.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Prueba 1: "Visualizador de Datos" ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Guía a los equipos para que validen que la percepción de la IA funciona correctamente antes de continuar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora que están listos, vamos con su primera prueba. Carguen el código del "Visualizador de Datos", el que solo imprime la coordenada X de la pelota. Muevan lentamente la pelota de un lado a otro frente a la cámara. Confirmen en la consola que los valores numéricos cambian de forma lógica (bajos a la izquierda, altos a la derecha). Esto es clave para validar que la percepción de la IA funciona.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Prueba 2: "Prueba de Seguimiento Estático" ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Guía a los equipos para que ejecuten su primera prueba de seguimiento, con un objetivo inmóvil.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto. Ahora que los "ojos" funcionan, carguen el código de seguimiento completo. Coloquen la pelota quieta a un lado del campo de visión del robot. Ejecuten el código y observen. El robot debería girar hasta centrar la pelota y luego detenerse. Repitan la prueba para el otro lado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: PRUEBAS, OBSERVACIÓN Y DEBUGGING COLABORATIVO ⏰ 15 minutos</h2>
+                <p><strong>Propósito</strong> Enseñar a los estudiantes a calibrar los parámetros clave de un bucle de control (sensibilidad y velocidad) para mejorar el rendimiento en un entorno dinámico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ciclo de Depuración - Sensibilidad ("Zona Muerta") ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6 y 7) Guía a los equipos a través del problema de la hipersensibilidad y cómo solucionarlo ajustando la "zona muerta".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><strong>Problema:</strong> "¡El robot gira sin parar y nunca se detiene! Es demasiado sensible."</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "El problema es que nuestra 'zona de tolerancia' en el centro es muy pequeña o no existe. En cuanto la pelota se mueve un píxel, el robot reacciona."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> "Xolo, nuestro robot vibra o gira sin parar, incluso cuando la pelota está casi en el centro. ¿Cómo lo calmamos?"</p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Están descubriendo la importancia de la 'zona muerta'! En su código, si su robot es muy sensible, hagan esa zona más grande. Prueben con `if posicion_x < 120:` y `elif posicion_x > 200`. Esto le da al robot un margen más amplio para considerar que la pelota 'está en el centro'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ciclo de Depuración - Velocidad de Giro ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Guía a los estudiantes a través del problema de la lentitud y cómo ajustar la velocidad de corrección.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant"><strong>Problema:</strong> "El robot gira muy lento y la pelota 'se le escapa' si la movemos un poco rápido."</p>
+                                <p class="dialogue assistant"><strong>Análisis Propio:</strong> "Necesitamos que la acción correctiva sea más fuerte. La velocidad de giro es muy baja."</p>
+                                <p class="dialogue assistant"><strong>Consulta a Xolo:</strong> "Xolo, ¿cómo hacemos que el robot gire más rápido para seguir la pelota?"</p>
+                                <p class="dialogue assistant"><strong>Sugerencia de Xolo:</strong> "¡Fácil! Dentro de sus comandos de giro, como `xgo.turn('left', 20)`, el segundo número es la velocidad. Aumenten ese valor. Prueben con `xgo.turn('left', 40)` o 50. ¡Pero cuidado! Si es demasiado rápido, podría empezar a oscilar."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación del Desafío de Seguimiento Dinámico ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Guía a los equipos para que realicen la prueba culminante de la sesión: el seguimiento de un objeto en movimiento.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, el momento culminante. Un miembro del equipo moverá la pelota lentamente de lado a lado, como si fuera un péndulo. Observen cómo su robot reacciona en tiempo real, intentando mantener la pelota centrada. Prueben los límites: ¿Qué tan rápido pueden mover la pelota antes de que el robot la pierda? Recuerden alternar roles para que todos puedan probar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: GNIUS STORM Y REINICIO DEL CICLO ⏰ 10 minutos</h2>
+                <p><strong>Propósito</strong> Celebrar los logros, compartir aprendizajes clave sobre calibración y fomentar la integración de habilidades en un nuevo desafío.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Facilita un espacio para que los equipos muestren sus robots en acción y compartan sus descubrimientos de calibración.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo de Gnius STORM! Cada equipo, prepárese para demostrar su robot siguiendo la pelota. Queremos ver qué tan "suave" o "nervioso" es el seguimiento. Compartan un aprendizaje clave de depuración, como: "Nuestro robot era muy brusco, pero al aumentar la 'zona muerta' a 100 píxeles, logramos que se quedara quieto." o "Tuvimos que subir la velocidad de giro a 60 para que pudiera seguir la pelota."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Reinicio del Ciclo ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Lanza un mini-desafío para integrar el seguimiento con la locomoción.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Han creado un sistema que reacciona a un mundo dinámico! Esto es IA en acción. Ahora que pueden seguir un objeto, ¿qué más pueden hacer? Con el tiempo que queda, intenten este desafío: modifiquen su código para que el robot camine hacia adelante (`xgo.walk()`) cuando la pelota esté en el centro, y gire cuando esté a los lados. ¡Pasen de solo 'mirar' a 'perseguir'!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
